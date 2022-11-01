@@ -1,0 +1,132 @@
+body{
+	background-color: white;
+}
+.header{
+	width: 100%;
+	height: auto;
+	min-height: 130px;
+	background-color:  #a6d1de;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+}
+
+.main-page{
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #a6d1de;
+	margin-top: 15px;
+	border-radius: 10px;
+	height: auto;
+	min-height: 500px;
+	font-family: 'Playfair Display', serif;
+}
+nav {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+nav ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav li {
+    float:left;
+    font-size: 25px;
+}
+.sidebar1{
+	background-color: #66b8d1;
+	margin-top: 5px;
+	margin-left: 10px;
+	border-radius: 7px;
+	float: left;
+	width: 15%;
+	height: auto;
+	min-height: 1500px;
+}
+.sidebar2{
+	margin-top: 5px;
+	margin-right: 10px;
+	border-radius: 7px;
+	float: right;
+	background-color: #66b8d1;	
+	width: 15%;
+	height: auto;
+	min-height: 1500px;
+}
+.bt1{
+	width: 95%;
+	margin-right: auto;
+	margin-left: 5px;
+	margin-top: 5px;
+	background-color: #6583d6;
+	height: auto;
+	min-height: 40px;
+}
+.borders{
+	width: 60%;
+	height: auto;
+	min-height: 340px;
+	background-color:   #a6d1de;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.borders1{
+	width: 60%;
+	height: auto;
+	min-height: 340px;
+
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.under{
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+	background-color: yellow;
+}
+.image-ornament{
+	width: 100%;
+	height: auto;
+	min-height: 70px;
+	background-image: url(10.jpg);
+	background-size: 25%;
+}
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
+}
